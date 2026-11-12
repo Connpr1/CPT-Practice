@@ -19,23 +19,41 @@ def bot_win():
 def tie():
 	print("You Tied")
 
-if bot == "rock" and player == "rock" or "Rock":
+if bot == "rock" and player == "rock":
 	tie()
-elif bot == "rock" and player == "paper" or "Paper":
+elif bot == "rock" and player == "paper":
 	player_win()
-elif bot == "rock" and player == "scissors" or "Scissors":
+elif bot == "rock" and player == "scissors":
 	bot_win()
-elif bot == "paper" and player == "paper" or "Paper":
+elif bot == "paper" and player == "paper":
 	tie()
-elif bot == "paper" and player == "scissors" or "Scissors":
+elif bot == "paper" and player == "scissors":
 	player_win()
-elif bot == "paper" and player == "rock" or "Rock":
+elif bot == "paper" and player == "rock":
 	bot_win()
-elif bot == "scissors" and player == "scissors" or "Scissors":
+elif bot == "scissors" and player == "scissors":
 	tie()
-elif bot == "scissors" and player == "rock" or "Rock":
+elif bot == "scissors" and player == "rock":
 	player_win()
-elif bot == "scissors" and player == "paper" or "Paper":
+elif bot == "scissors" and player == "paper":
+	bot_win()
+elif bot == "rock" and player == "Rock":
+	tie()
+elif bot == "rock" and player == "Paper":
+	player_win()
+elif bot == "rock" and player == "Scissors":
+	bot_win()
+elif bot == "paper" and player == "Paper":
+	tie()
+elif bot == "paper" and player == "Scissors":
+	player_win()
+elif bot == "paper" and player == "Rock":
+	bot_win()
+elif bot == "scissors" and player == "Scissors":
+	tie()
+elif bot == "scissors" and player == "Rock":
+	player_win()
+elif bot == "scissors" and player == "Paper":
 	bot_win()
 else:
 	print("Type Rock, Paper, or Scissors")
