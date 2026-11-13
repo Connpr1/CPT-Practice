@@ -1,9 +1,8 @@
 #Connor and Sai
-
 import random
 
 def player_input(rock):
-	return(rock)
+		return(rock)
 
 player = player_input(input("Choose Rock, Paper, or Scissors:"))
 list = ["rock", "paper", "scissors"]
@@ -15,9 +14,10 @@ print()
 def player_win():
 	print("You Won :)")
 def bot_win():
-	print("You Lost :(")
+	print("You LOSSST!!!")
 def tie():
 	print("You Tied")
+
 
 if bot == "rock" and player == "rock":
 	tie()
@@ -56,5 +56,4 @@ elif bot == "scissors" and player == "Rock":
 elif bot == "scissors" and player == "Paper":
 	bot_win()
 else:
-	print("Type Rock, Paper, or Scissors")
-	
+	print("You LOST!!!!!!")
