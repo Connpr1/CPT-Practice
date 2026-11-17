@@ -63,6 +63,7 @@ while running:
 			playerwin += 1 
 		elif bot == "scissors" and player == "paper":
 			bot_win()
+			botwin += 1 
 		
 	else:
 		print("Please type yes or no.")
