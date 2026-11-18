@@ -31,7 +31,8 @@ while running:
 	elif answer == "yes":
 		player = player_input(input("Choose Rock, Paper, or Scissors: ").lower())
 		list = ["rock", "paper", "scissors"]
-		if player not in list:
+		list2 = ["rock", "paper", "scissors"]
+		if player not in list2:
 			print("Please type rock, paper, or scissors.")
 			continue
 
